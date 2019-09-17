@@ -1,0 +1,21 @@
+---
+server:
+  port: 8008
+---
+spring:
+  application:
+    name: sandbox-kafkar
+  profiles: docker
+  kafka:
+      bootstrap-servers: 10.206.20.120:9092
+      consumer:
+        auto-offset-reset: earliest
+#        group-id: kafkar-${random.uuid}
+        group-id: kafkar
+---
+logging:
+  level:
+    root: INFO
+kafka:
+  topic:
+    topicA: topicA
