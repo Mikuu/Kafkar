@@ -10,11 +10,17 @@ spring:
       bootstrap-servers: localhost:9092
       consumer:
         auto-offset-reset: earliest
-        group-id: kafkar
+#        group-id: kafkar
 ---
 logging:
   level:
     root: INFO
 kafka:
+  group:
+    groupA: groupA
+    groupB: groupB
+    groupS: groupString
   topic:
     topicA: topicA
+    topicB: topicB
+    topicS: topicString
