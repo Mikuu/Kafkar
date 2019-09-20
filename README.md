@@ -1,3 +1,5 @@
 # Kafkar
 
-### Spring Boot example for utilizing Kafka
+Spring Boot example for utilizing Kafka
+
+😏
